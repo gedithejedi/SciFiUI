@@ -35,9 +35,9 @@ public class UI extends PApplet
 
     public void setup()
     {
-        b = new Button(this, 50, 50, 100, 50, "Hola");
+        b = new Button(this, 600, 150, 100, 50, "Hola");
         mc = new MovingCircle(this, width / 2, height / 2, 50);
-		r = new Radar(this, 500, 250, 100);
+		r = new Radar(this, 110, 110, 200);
     }
 
     public void draw()
