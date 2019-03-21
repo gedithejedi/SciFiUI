@@ -33,7 +33,7 @@ public class Button
          {
             if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
             {
-                ui.text("You just pressed me", x, y);
+                ui.text("You just pressed me", x + 30, y - 25);
                 ui.fill(0);
                 //do stuff 
             }
