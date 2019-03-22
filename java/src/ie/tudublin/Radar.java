@@ -28,21 +28,22 @@ public class Radar
 
     public void render()
     {
-		//making the circle
-        ui.noFill();
-        ui.stroke(255);
-		ui.ellipse(x, y, diameter, diameter);
-		ui.fill(255);
-		//making the line
-		ui.line(x, y, lx, ly);
-    }
+			//making the circle
+    	ui.noFill();
+      ui.stroke(255);
+			ui.ellipse(x, y, diameter, diameter);
+			ui.ellipse(x, y, diameter + 5, diameter + 5);
+			ui.fill(255);
+			//making the line
+			ui.line(x, y, lx, ly);
+		}
 	
 	//making the line go around
 	    public void updateline()
     {
-		angle += 0.05;
-		ly +=(radius *(Math.sin(angle)));
-		lx += (radius *(Math.cos(angle)));
+			angle += 0.05;
+			ly +=(radius *(Math.sin(angle)));
+			lx += (radius *(Math.cos(angle)));
     }
 	
 	//reseting the x and y coordinates so the line does not get bigger
