@@ -29,13 +29,17 @@ public class Radar
     public void render()
     {
 			//making the circle
-    	ui.noFill();
+    	//making the colour of the line white
       ui.stroke(255);
 			ui.ellipse(x, y, diameter, diameter);
-			ui.ellipse(x, y, diameter + 5, diameter + 5);
-			ui.fill(255);
+			//making the fill of inner circle green
+			ui.fill(0,128,0);
+			ui.ellipse(x, y, diameter + 15, diameter + 15);
 			//making the line
+			//colour of line red
+			ui.stroke(255,0,0);
 			ui.line(x, y, lx, ly);
+
 		}
 	
 	//making the line go around
