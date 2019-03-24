@@ -1,12 +1,14 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class UI extends PApplet
 {
     Button b;
     MovingCircle mc;
-	Radar r;
+    Radar r;
+    PImage img;
 
     boolean[] keys = new boolean[1024];
 
@@ -28,21 +30,23 @@ public class UI extends PApplet
 
     public void settings()
     {
-        //size(800, 800);
+        size(1025, 576);
         // Use fullscreen instead of size to make your interface fullscreen
-        fullScreen(); 
+        //fullScreen(); 
+        img = loadImage("images/mars.jpg");
     }
 
     public void setup()
     {
         b = new Button(this, 600, 150, 100, 50, "Hola");
         mc = new MovingCircle(this, width / 2, height / 2, 50);
-		r = new Radar(this, 110, 110, 200);
+        r = new Radar(this, 110, 110, 150);
     }
+    
 
     public void draw()
     {
-        background(0);
+        background(img);
         b.render();
 
         mc.update();
