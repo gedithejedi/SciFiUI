@@ -2,42 +2,20 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Radar
+public class UiLayout
 {
 	UI ui;
-
-    
-
-	public Radar(UI ui, float x, float y, float diameter)
+	private float x;
+	
+	public UiLayout(UI ui, float x)
     {
-        this.ui = ui;
-        this.x = x;
-        this.y = y;
-        this.diameter = diameter;
-        radius = diameter / 2;
-		lx = x;
-		ly = y;
+		this.ui = ui;
+		this.x = x;
     }
 
     public void render()
     {
-			//making the circle
-    	//making the colour of the line black
-      		ui.stroke(0);
-			ui.ellipse(x, y, diameter + 20, diameter + 20);
-			//making the fill of inner circle blue
-			ui.fill(77, 00, 255);
-			ui.ellipse(x, y, diameter, diameter);
-			//circles inside the radar
-			ui.stroke(89,89,89);
-			ui.ellipse(x, y, diameter - 20, diameter - 20);
-			ui.ellipse(x, y, diameter - 50, diameter - 50);
-			ui.ellipse(x, y, diameter - 70, diameter - 70);
-			ui.ellipse(x, y, diameter - 90, diameter - 90);
-			//making the line
-			//colour of line red
-			ui.stroke(255,0,0);
-			ui.line(x, y, lx, ly);
+		ui.rect(50, 10, 100, 200); // tlx, tly, w, h
 			
-
-		}
+	}
+}

@@ -8,7 +8,8 @@ public class UI extends PApplet
     Button b;
     MovingCircle mc;
     Radar r;
-    PImage img;
+	PImage img;
+    UiLayout ul;
 
     boolean[] keys = new boolean[1024];
 
@@ -41,7 +42,7 @@ public class UI extends PApplet
         b = new Button(this, 600, 150, 100, 50, "Hola");
         mc = new MovingCircle(this, width / 2, height / 2, 50);
         r = new Radar(this, 198, 438, 150);
-        ul = new Layout();
+        ul = new UiLayout(this, 100);
     }
     
 
@@ -50,7 +51,7 @@ public class UI extends PApplet
         background(img);
         b.render();
 
-        ul.layout();
+        ul.render();
 
         mc.update();
         mc.render();
