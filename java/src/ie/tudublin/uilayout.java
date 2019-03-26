@@ -16,7 +16,7 @@ public class UiLayout
     public void render()
     {
 			//Drawing the top left part
-			ui.stroke(255,0,0);
+			ui.stroke(0,0,255);
 			ui.line(0, 135, 185, 110);
 			ui.line(185, 110, 240, 40);
 			ui.line(240, 40, 208, 0);
