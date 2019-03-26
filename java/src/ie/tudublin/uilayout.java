@@ -29,5 +29,9 @@ public class UiLayout
 			ui.line(820, 0, 785, 40);
 			ui.line(785, 40, 840, 108);
 			ui.line(840, 108, 1025, 133);
-		}
+			
+			//drawing the bottom outlines
+			ui.line(0, 375, 20, 370);
+			ui.line(20, 370, 100, 430);
+	}
 }
