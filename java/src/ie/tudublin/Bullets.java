@@ -36,10 +36,12 @@ public class Bullets
     public void render()
     {
 		ui.noFill();
-        ui.stroke(255);
+        ui.noStroke();
         ui.rect(x, y, width, height);
+		ui.textSize(30);
+		ui.text("Ammo", x + width * 0.5f, y + height * 0.1f);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-		ui.textSize(20);
+		ui.textSize(50);
         ui.text(Bullets, x + width * 0.5f, y + height * 0.5f);
     }
 
