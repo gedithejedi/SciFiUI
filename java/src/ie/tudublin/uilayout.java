@@ -6,11 +6,15 @@ public class UiLayout
 {
 	UI ui;
 	private float x;
+	private float halfx;
+	private float halfy;
 	
 	public UiLayout(UI ui, float x)
     {
 		this.ui = ui;
 		this.x = x;
+		this.halfx = 1025 /2;
+		this.halfy = 576 /2;
     }
 
     public void render()
@@ -42,5 +46,9 @@ public class UiLayout
 			ui.line(666, 516, 870, 455);
 			ui.line(870, 455, 1005, 372);
 			ui.line(1005, 372, 1025, 377);
+			//making the circle in the center of the screen
+			ui.ellipse(halfx, halfy, 20, 20);
+			//making the dot in the circle
+			ui.stroke(255, halfx, halfy);
 	}
 }

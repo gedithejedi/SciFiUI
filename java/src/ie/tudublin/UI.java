@@ -6,7 +6,7 @@ import processing.core.PImage;
 public class UI extends PApplet
 {
     Button b;
-    MovingCircle mc;
+    Bullets bul;
     Radar r;
 	PImage img;
     UiLayout ul;
@@ -40,7 +40,7 @@ public class UI extends PApplet
     public void setup()
     {
         b = new Button(this, 600, 150, 100, 50, "Hola");
-        mc = new MovingCircle(this, width / 2, height / 2, 50);
+        bul = new Bullets(this);
         r = new Radar(this, 198, 438, 150);
         ul = new UiLayout(this, 100);
     }
@@ -53,8 +53,8 @@ public class UI extends PApplet
 
         ul.render();
 
-        mc.update();
-        mc.render();
+        bul.update();
+        bul.render();
 		
 		r.updateline();
 		r.render();

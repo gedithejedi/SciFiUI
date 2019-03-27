@@ -28,9 +28,10 @@ public class Radar
 
     public void render()
     {
-			//making the circle
+		//making the circle
     	//making the colour of the line black
       		ui.stroke(0);
+			ui.fill(0);
 			ui.ellipse(x, y, diameter + 20, diameter + 20);
 			//making the fill of inner circle blue
 			ui.fill(77, 77, 255);
