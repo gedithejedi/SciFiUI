@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import java.awt.Font;
 
 public class UiLayout
 {
@@ -20,7 +21,8 @@ public class UiLayout
     public void render()
     {
 			//Drawing the top left part
-			ui.stroke(0,0,255);
+			ui.stroke(0);
+			ui.strokeWeight(6);
 			ui.line(0, 135, 185, 110);
 			ui.line(185, 110, 240, 40);
 			ui.line(240, 40, 208, 0);
@@ -47,6 +49,8 @@ public class UiLayout
 			ui.line(870, 455, 1005, 372);
 			ui.line(1005, 372, 1025, 377);
 			//making the circle in the center of the screen
+			ui.strokeWeight(3);
+			ui.stroke(0);
 			ui.ellipse(halfx, halfy, 20, 20);
 			//making the dot in the circle
 			ui.stroke(255, halfx, halfy);

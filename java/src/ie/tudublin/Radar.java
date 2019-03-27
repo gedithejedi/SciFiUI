@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import java.awt.Font;
 
 public class Radar
 {
@@ -31,6 +32,7 @@ public class Radar
 		//making the circle
     	//making the colour of the line black
       		ui.stroke(0);
+			ui.strokeWeight(2);
 			ui.fill(0);
 			ui.ellipse(x, y, diameter + 20, diameter + 20);
 			//making the fill of inner circle blue

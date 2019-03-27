@@ -29,7 +29,7 @@ public class Button
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         ui.text(text, x + width * 0.5f, y + height * 0.5f);
 
-         if(ui.mousePressed)
+        if(ui.mousePressed)
          {
             if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
             {

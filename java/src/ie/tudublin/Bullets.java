@@ -1,6 +1,8 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import java.awt.Font;
+import java.awt.Graphics;
 
 public class Bullets
 {
@@ -10,6 +12,11 @@ public class Bullets
     private float width;
     private float height;
     private int Bullets;
+	//shooting vars
+	private float sx;
+    private float sy;
+    private float swidth;
+    private float sheight;
 	
     public Bullets(UI ui)
     {
@@ -18,7 +25,12 @@ public class Bullets
         this.y = 20;
         this.width = 150;
         this.height = 100;
-        this.Bullets = 300;
+        this.Bullets = 150;
+		//shotting vars
+		this.sx = 0;
+        this.sy = 0;
+        this.swidth = 1025;
+        this.sheight = 576;
     }
     
     public void render()
@@ -27,11 +39,41 @@ public class Bullets
         ui.stroke(255);
         ui.rect(x, y, width, height);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
+		ui.textSize(20);
         ui.text(Bullets, x + width * 0.5f, y + height * 0.5f);
     }
 
-    public void update()
+    public void shoot()
     {
+		ui.stroke(255,0,0);
+		ui.fill(255,0,0);
+		ui.strokeWeight(1);
+		
+		if(ui.mousePressed)
+        {
+			//size(1025, 576);
+            if(ui.mouseX > sx && ui.mouseX < sx + swidth && ui.mouseY > sy && ui.mouseY < sy + sheight)
+            {
+                ui.ellipse(ui.mouseX, ui.mouseY, 30, 30);
+				if(Bullets > 0)
+				{
+					Bullets --;
+				}
+				else
+				{
+					//ui.text("Reloading", x + width * 0.5f, y + height * 0.5f);
+					try 
+					{
+						Thread.sleep(2000);
+					} 
+					catch(InterruptedException e)
+					{
+					// this part is executed when an exception (in this example InterruptedException) occurs
+					}
+					Bullets = 150;
+				}
+            }
+        } 
 
     }
 }

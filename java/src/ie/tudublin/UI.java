@@ -2,6 +2,7 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 import processing.core.PImage;
+import java.awt.Font;
 
 public class UI extends PApplet
 {
@@ -53,7 +54,7 @@ public class UI extends PApplet
 
         ul.render();
 
-        bul.update();
+        bul.shoot();
         bul.render();
 		
 		r.updateline();
