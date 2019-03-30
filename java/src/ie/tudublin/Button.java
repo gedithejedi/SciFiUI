@@ -9,34 +9,42 @@ public class Button
     private float y;
     private float width;
     private float height;
-    private String text;
+    private float xl;
+    private float yl;
+    private float xl2;
+    private float yl2;
 
-    public Button(UI ui, float x, float y, float width, float height, String text)
+    public Button(UI ui, float x, float y, float width, float height)
     {
         this.ui = ui;
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
-        this.text = text;
+        xl = 340;
+        yl = 240;
+        xl2 = 100;
+        yl2 = 180;
     }
 
     public void render()
     {
         ui.noFill();
-        ui.stroke(255);
+        ui.noStroke();
         ui.rect(x, y, width, height);
+        ui.rect(xl, yl, xl2, yl2);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-        ui.text(text, x + width * 0.5f, y + height * 0.5f);
 
         
-        
-            if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
-            {
-                ui.text("You just pressed me", x + 30, y - 25);
-                ui.fill(0);
-                //do stuff 
-            }
+        if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)
+        {
+            ui.text("You just hovered over me me", xl + 30, yl - 25); 
+        }
+    
+        if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
+        {
+            ui.text("You just hovered over me me", x + 30, y - 25);
+        }
          
     }
 }

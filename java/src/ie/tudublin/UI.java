@@ -35,12 +35,12 @@ public class UI extends PApplet
         size(1025, 576);
         // Use fullscreen instead of size to make your interface fullscreen
         //fullScreen(); 
-        img = loadImage("images/mars.jpg");
+        img = loadImage("images/mars2.png");
     }
 
     public void setup()
     {
-        b = new Button(this, 600, 150, 100, 50, "Hola");
+        b = new Button(this, 650, 220, 260, 180);
         bul = new Bullets(this);
         r = new Radar(this, 198, 438, 150);
         ul = new UiLayout(this, 100);
