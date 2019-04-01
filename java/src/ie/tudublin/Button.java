@@ -31,6 +31,26 @@ public class Button
 
     public void render()
     {
+		
+		if(health > 60)
+		{
+			ui.textSize(40);
+			ui.fill(0,255,0);
+			ui.text("Status : Great Condition", 512, 30);
+		}
+		else if(health > 20 && health < 60 )
+		{
+			ui.textSize(40);
+			ui.fill(255,255,0);
+			ui.text("Status : Good Condition", 512, 30);
+		}
+		else if(health < 20)
+		{
+			ui.textSize(40);
+			ui.fill(255,0,0);
+			ui.text("Status : Critical Condition", 512, 30);
+		}
+		
 		if(health > 0)
 		{
 			ui.noFill();
