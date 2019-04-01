@@ -4,9 +4,8 @@ Name: Gediminas Petreikis
 
 Student Number: C17323756
 
-Fork this repository and use it a starter project for your assignment
-
 # Description of the assignment
+I have made a POV UI of a futuristic robot that has landed on mars and has encountered aliens. This robot has a radar, warning system, alien analysis, capability to shoot, reload and loose health.
 
 # Instructions
 
