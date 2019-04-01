@@ -56,16 +56,20 @@ public class Button
 				ui.text("You just hovered over me me", x + 30, y - 25);
 			}
 			
+			ui.textSize(20);
+			
 			if(ui.mousePressed)
 			{
 				if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)
 				{  
 					health --;
+					ui.text("He hits you back!", ui.mouseX + 150, ui.mouseY);
 				}
 				
 				if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
 				{
 					health --;
+					ui.text("He hits you back!", ui.mouseX + 150, ui.mouseY);
 				}
 			}
 		}

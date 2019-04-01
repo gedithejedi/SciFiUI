@@ -51,6 +51,7 @@ public class UiLayout
 			//making the circle in the center of the screen
 			ui.strokeWeight(3);
 			ui.stroke(0);
+			ui.noFill();
 			ui.ellipse(halfx, halfy, 20, 20);
 			//making the health bar blue outline
 			ui.stroke(77, 77, 255);
