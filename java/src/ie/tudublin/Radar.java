@@ -44,11 +44,14 @@ public class Radar
 			ui.ellipse(x, y, diameter - 50, diameter - 50);
 			ui.ellipse(x, y, diameter - 70, diameter - 70);
 			ui.ellipse(x, y, diameter - 90, diameter - 90);
+			//adding the red dots
+			ui.fill(255,0,0);
+			ui.ellipse(x + 5, y - 40, 5, 5);
+			ui.ellipse(x + 50, y - 45, 5, 5);
 			//making the line
 			//colour of line red
 			ui.stroke(255,0,0);
-			ui.line(x, y, lx, ly);
-			
+			ui.line(x, y, lx, ly);		
 
 		}
 	
