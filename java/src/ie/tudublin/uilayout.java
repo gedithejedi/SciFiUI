@@ -9,7 +9,6 @@ public class UiLayout
 	private float x;
 	private float halfx;
 	private float halfy;
-	private int health;
 	
 	public UiLayout(UI ui, float x)
     {
@@ -17,7 +16,6 @@ public class UiLayout
 		this.x = x;
 		this.halfx = 1025 /2;
 		this.halfy = 576 /2;
-		health = 120;
     }
 
     public void render()
@@ -54,9 +52,6 @@ public class UiLayout
 			ui.strokeWeight(3);
 			ui.stroke(0);
 			ui.ellipse(halfx, halfy, 20, 20);
-			//making the red health bar
-			ui.fill(255,0,0);
-			ui.rect(20, 60, health, 20);
 			//making the health bar blue outline
 			ui.stroke(77, 77, 255);
 			ui.noFill();
@@ -65,7 +60,5 @@ public class UiLayout
 			ui.textSize(30);
 			ui.fill(77, 77, 255);
 			ui.text("Health", 80, 30);
-			ui.textSize(10);
-			ui.text(health +"/120", 170, 70);
 	}
 }
