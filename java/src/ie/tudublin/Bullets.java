@@ -39,6 +39,7 @@ public class Bullets
         ui.noStroke();
         ui.rect(x, y, width, height);
 		ui.textSize(30);
+		ui.fill(77, 77, 255);
 		ui.text("Ammo", x + width * 0.5f, y + height * 0.1f);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
 		ui.textSize(50);
