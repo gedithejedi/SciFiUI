@@ -7,7 +7,6 @@ import processing.data.TableRow;
 
 public class Button extends PApplet
 {
-    ArrayList<Alien> aliens = new ArrayList<Alien>();
     UI ui;
     private float x;
     private float y;
@@ -31,17 +30,6 @@ public class Button extends PApplet
         xl2 = 100;
         yl2 = 180;
         health = 120;
-        loadProfile();
-    }
-
-    void loadProfile()
-    {
-        Table table = loadTable("alien.csv", "header");
-        for(TableRow tr:table.rows())
-        {
-            Alien a = new Alien(tr);
-            aliens.add(p);
-        }        
     }
 
     public void render()

@@ -50,8 +50,8 @@ public class UI extends PApplet
     public void draw()
     {
         background(img);
+		
         b.render();
-        b.loadProfile();
 
         ul.render();
 
