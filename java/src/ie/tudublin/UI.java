@@ -51,6 +51,7 @@ public class UI extends PApplet
     {
         background(img);
         b.render();
+        b.loadProfile();
 
         ul.render();
 

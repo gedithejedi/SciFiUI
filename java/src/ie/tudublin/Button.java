@@ -1,9 +1,13 @@
 package ie.tudublin;
 
+import java.util.ArrayList;
 import processing.core.PApplet;
+import processing.data.Table;
+import processing.data.TableRow;
 
-public class Button
+public class Button extends PApplet
 {
+    ArrayList<Alien> aliens = new ArrayList<Alien>();
     UI ui;
     private float x;
     private float y;
@@ -26,7 +30,18 @@ public class Button
         yl = 240;
         xl2 = 100;
         yl2 = 180;
-		health = 120;
+        health = 120;
+        loadProfile();
+    }
+
+    void loadProfile()
+    {
+        Table table = loadTable("alien.csv", "header");
+        for(TableRow tr:table.rows())
+        {
+            Alien a = new Alien(tr);
+            aliens.add(p);
+        }        
     }
 
     public void render()
@@ -68,12 +83,20 @@ public class Button
 			
 			if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)
 			{
-				ui.text("You just hovered over me me", xl + 30, yl - 25); 
+                ui.fill(77, 77, 255);
+                ui.textSize(20);
+                ui.text("Planet of origin: ", 455, 500); 
+                ui.text("Name: ", 495, 520);
+                ui.text("Superpower: ", 467, 540);
 			}
 		
 			if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
 			{
-				ui.text("You just hovered over me me", x + 30, y - 25);
+                ui.fill(77, 77, 255);
+                ui.textSize(20);
+                ui.text("Planet of origin: ", 455, 500); 
+                ui.text("Name: ", 495, 520); 
+                ui.text("Superpower: ", 467, 540);
 			}
 			
 			ui.textSize(20);

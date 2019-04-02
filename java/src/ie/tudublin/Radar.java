@@ -3,7 +3,7 @@ package ie.tudublin;
 import processing.core.PApplet;
 import java.awt.Font;
 
-public class Radar
+public class Radar extends PApplet
 {
 	UI ui;
     private float x;
