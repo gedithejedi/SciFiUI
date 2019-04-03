@@ -71,7 +71,7 @@ public class Button extends PApplet
 			
 			if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)
 			{
-                ui.fill(77, 77, 255);
+                ui.fill(0,0,255);
                 ui.textSize(20);
                 ui.text("Planet of origin: ", 455, 500); 
                 ui.text("Name: ", 495, 520);
@@ -80,7 +80,7 @@ public class Button extends PApplet
 		
 			if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
 			{
-                ui.fill(77, 77, 255);
+                ui.fill(0,0,255);
                 ui.textSize(20);
                 ui.text("Planet of origin: ", 455, 500); 
                 ui.text("Name: ", 495, 520); 
