@@ -88,7 +88,7 @@ public class Button extends PApplet
 			}
 			
 			ui.textSize(20);
-			
+			ui.fill(250,0,0);
 			if(ui.mousePressed)
 			{
 				if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)

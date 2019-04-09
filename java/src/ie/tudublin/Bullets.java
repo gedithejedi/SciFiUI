@@ -57,7 +57,7 @@ public class Bullets
 			//size(1025, 576);
             if(ui.mouseX > sx && ui.mouseX < sx + swidth && ui.mouseY > sy && ui.mouseY < sy + sheight)
             {
-                ui.ellipse(ui.mouseX, ui.mouseY, 30, 30);
+                ui.ellipse(ui.mouseX, ui.mouseY, 10, 10);
                 ui.line(swidth/2,sheight,ui.mouseX,ui.mouseY);
 				if(Bullets > 0)
 				{

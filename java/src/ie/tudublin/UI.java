@@ -50,8 +50,6 @@ public class UI extends PApplet
     public void draw()
     {
         background(img);
-		
-        b.render();
 
         ul.render();
 
@@ -61,6 +59,8 @@ public class UI extends PApplet
 		r.updateline();
 		r.render();
 		r.resetline();
+
+        b.render();
 
         if (checkKey(LEFT))
         {
