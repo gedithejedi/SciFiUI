@@ -17,18 +17,31 @@ I have made a POV UI of a futuristic robot that has landed on mars and has encou
 7. Once your health goes down to 0 your screen goes black and 
 
 # How it works
+There are 7 classes in the java program. 
+Alien.java - This is where the getters and setters for the alien info from csv file are stored
+Bullets.java - This file is responsible for having the whole screen as a button and drawwing a laser 	beam whenever you shoot. Also this makes the bullet count to go down and then reload after 	      stalling for 2 seconds.
+Button.java - This is responsible for what happens when you click or hover over the hitbox of the 	alien. If you click on it it makes the health bar go down and changes the status bar at the top       of the screen accordingly. If you hover over them it uses the info from the csv file to show         you information about the alien at the bottom of the screen. Once you hit one of the aliens           they automaticly hit you back to defend themselves.
+Radar.java - This draws the radar.
+UI.java - This is the main file where all of the files get loaded from. This is also where I loaded 	in my background image and the csv file. This also sets the priority of the files and which file     overrides another.
+UiLayout.java - this file is only used to draw out the ui lines out to make the whole outline.
+Main.java - the file that is used to execute the program.
 
 # What I am most proud of in the assignment
+The overall asthetic look of the program. I put a few days of thought in what I wanted my finished program to look like and I believe it turned out well. The code that I used is not too complicated but my aim was to use this simple code into making something that works well and does not turn the UI into a game (main reason why I did not implement aliens health bar). 
+
+I wanted this to be a easy to use and get grasp of alien UI with everything having its own place on the screen and not interfering with other things.
+
+Astheticly I was planing to colour in the ui blue to make it look more cool but then practicly this would interfere with the robots field of view as the transperent ui allows him to see more without things getting blocked. (also it was much easier to code) 
+
+I mean overall its not a very complicated program with many different features but its nice and cool looking which is exacly what I was aiming to do a cool ui that would not keep me bored programming.
 
 # Markdown Tutorial
-
-This is *emphasis*
 
 This is a bulleted list
 
 - Item
 - Item
-
+0
 This is a numbered list
 
 1. Item
