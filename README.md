@@ -70,11 +70,15 @@ public void render()
 
 This is an image of the background used for the project:
 
-![An image of the background](java/images/mars.jpg)
+![An image of the background](java/images/mars2.jpg)
 
-This is an image using an absolute URL:
+This is an image of starting screen:
 
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
+![Image of main screen](java/image/ogscreen.png)
+
+This is an image of critical condition:
+
+![Image of main screen](java/image/critical.png)
 
 This is a youtube video:
 
