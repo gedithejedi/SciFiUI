@@ -98,18 +98,20 @@ public class Button extends PApplet
 			}
 			
 			ui.textSize(20);
-			ui.fill(250,0,0);
+			
 			if(ui.mousePressed)
 			{
 				if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)
 				{  
 					health --;
+					ui.fill(79, 142, 236);
 					ui.text("He hits you back!", ui.mouseX + 150, ui.mouseY);
 				}
 				
 				if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
 				{
 					health --;
+					ui.fill(79, 142, 236);
 					ui.text("He hits you back!", ui.mouseX + 150, ui.mouseY);
 				}
 			}
@@ -121,7 +123,7 @@ public class Button extends PApplet
 			ui.rect(0, 0, 1025, 576);
 			ui.fill(255,0,0);
 			ui.textSize(50);
-			ui.text("YOU DIED", 1025/2, 576/2);
+			ui.text("System Failed", 1025/2, 576/2);
 			
 		}
          
