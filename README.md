@@ -5,9 +5,16 @@ Name: Gediminas Petreikis
 Student Number: C17323756
 
 # Description of the assignment
-I have made a POV UI of a futuristic robot that has landed on mars and has encountered aliens. This robot has a radar, warning system, alien analysis, capability to shoot, reload and loose health.
+I have made a POV UI of a futuristic robot that has landed on mars and has encountered aliens. This robot has a radar, warning system, alien analysis, capability to shoot, reload and loose health. This is somewhat based of the masterchief ui from Halo with my own twist to it.
 
 # Instructions
+1. Clicking anywhere on screen with left mouse click will shoot lasers.
+2. Shooting at the aliens will cause them to agro on you and hit you back.
+3. Once you use  up all of you bullets the system reloads them back for you (this may sabotage the radar system as reloading takes up    	all of your system effort)
+4. Your health status bar is at the very top of the screen letting you know about your working status.
+5. The radar lets the robot know the location of hostiles.
+6. Hovering over the aliens will reveal information about them.
+7. Once your health goes down to 0 your screen goes black and 
 
 # How it works
 
