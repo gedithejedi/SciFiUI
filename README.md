@@ -68,9 +68,9 @@ public void render()
 }
 ```
 
-This is an image using a relative URL:
+This is an image of the background used for the project:
 
-![An image](images/mars.jpg)
+![An image of the background](java/images/mars.jpg)
 
 This is an image using an absolute URL:
 
