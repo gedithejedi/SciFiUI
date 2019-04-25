@@ -95,7 +95,7 @@ This is a youtube video:
 The loaded CSV file:
 
 | Name | Planet of origin | Superpower |
-|-----------|-----------|
+|-----------|-----------|-----------|
 | Vortigaunt | Xen | Electrical |
 | Xenomorph | Unknown | Heatsensors |
 
