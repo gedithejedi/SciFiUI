@@ -2,8 +2,6 @@ package ie.tudublin;
 
 import java.util.ArrayList;
 import processing.core.PApplet;
-import processing.data.Table;
-import processing.data.TableRow;
 
 public class Button extends PApplet
 {
@@ -115,5 +113,6 @@ public class Button extends PApplet
 			
 		}
          
-    }
+	}
+	
 }

@@ -2,7 +2,11 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 import processing.core.PImage;
+import processing.data.Table;
+import processing.data.TableRow;
+
 import java.awt.Font;
+import java.util.ArrayList;
 
 public class UI extends PApplet
 {
@@ -44,6 +48,8 @@ public class UI extends PApplet
         bul = new Bullets(this);
         r = new Radar(this, 198, 438, 150);
         ul = new UiLayout(this, 100);
+        loadData();
+        printAliens();
     }
     
 
@@ -67,5 +73,27 @@ public class UI extends PApplet
             System.out.println("Left arrow key pressed");
         }
     }
+    
+	public void loadData()
+	{   
+		Table table = loadTable("data/aliens.csv", "header");
+        
+        for(TableRow row:table.rows())
+        {
+            Alien alien = new Alien(row);
+            aliens.add(alien);
+        }
+
+    }
+
+    public void printAliens()
+    {
+        for(Alien alien:aliens)
+        {
+            System.out.println(alien);
+        }
+    }
+    
+    private ArrayList<Alien> aliens = new ArrayList<Alien>();
 }
 

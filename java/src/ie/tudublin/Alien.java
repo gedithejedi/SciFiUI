@@ -1,50 +1,64 @@
 package ie.tudublin;
 
-import processing.data.*;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import processing.data.TableRow;
 
 public class Alien
 {
-    public static void main(String[] args) 
-    {
+    private String name;
+    private String planet;
+    private String superp;
 
-        String csv = "data/aliens.csv";
-        String line = "";
-        String split = ",";
-        String[] names = {"_","_","_"};
-        String[] planet = {"_","_","_"};
-        String[] superp = {"_","_","_"};
-
-        try (BufferedReader br = new BufferedReader(new FileReader(csv))) 
-        {
-
-            while ((line = br.readLine()) != null) 
-            {
-                int i = 0;
-                String alien[] = line.split(split);
-                names[i] = alien[0];
-                planet[i] = alien[1];
-                superp[i] = alien[2];
-                System.out.println("name= " + alien[0]);
-               //+ System.out.println("times ran "+ i);
-                i++;
-            }
-            System.out.println("name= " + names[0]);
-            System.out.println("name= " + planet[0]);
-            System.out.println("name= " + superp[0]);
-
-
-
-        } 
-        
-        catch (IOException e) 
-        {
-            e.printStackTrace();
-        }
-
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
     }
-    
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the planet
+     */
+    public String getPlanet() {
+        return planet;
+    }
+
+    /**
+     * @param planet the planet to set
+     */
+    public void setPlanet(String planet) {
+        this.planet = planet;
+    }
+
+    /**
+     * @return the superp
+     */
+    public String getSuperp() {
+        return superp;
+    }
+
+    /**
+     * @param superp the superp to set
+     */
+    public void setSuperp(String superp) {
+        this.superp = superp;
+    }
+   
+   public String toString()
+   {
+       return name + "\t" + superp + "\t" + planet;
+   } 
+
+   public Alien(TableRow row)
+   {
+    name = row.getString("Name");
+    planet = row.getString("Planet of origin");
+    superp = row.getString("Superpower");
+   }
 }
