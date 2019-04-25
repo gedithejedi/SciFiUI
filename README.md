@@ -18,13 +18,20 @@ I have made a POV UI of a futuristic robot that has landed on mars and has encou
 
 # How it works
 There are 7 classes in the java program. 
-Alien.java - This is where the getters and setters for the alien info from csv file are stored
-Bullets.java - This file is responsible for having the whole screen as a button and drawwing a laser 	beam whenever you shoot. Also this makes the bullet count to go down and then reload after 	      stalling for 2 seconds.
-Button.java - This is responsible for what happens when you click or hover over the hitbox of the 	alien. If you click on it it makes the health bar go down and changes the status bar at the top       of the screen accordingly. If you hover over them it uses the info from the csv file to show         you information about the alien at the bottom of the screen. Once you hit one of the aliens           they automaticly hit you back to defend themselves.
-Radar.java - This draws the radar.
-UI.java - This is the main file where all of the files get loaded from. This is also where I loaded 	in my background image and the csv file. This also sets the priority of the files and which file     overrides another.
-UiLayout.java - this file is only used to draw out the ui lines out to make the whole outline.
-Main.java - the file that is used to execute the program.
+### Alien.java 
+- This is where the getters and setters for the alien info from csv file are stored
+### Bullets.java 
+- This file is responsible for having the whole screen as a button and drawwing a laser 	beam whenever you shoot. Also this makes the bullet count to go down and then reload after 	      stalling for 2 seconds.
+### Button.java 
+- This is responsible for what happens when you click or hover over the hitbox of the 	alien. If you click on it it makes the health bar go down and changes the status bar at the top       of the screen accordingly. If you hover over them it uses the info from the csv file to show         you information about the alien at the bottom of the screen. Once you hit one of the aliens           they automaticly hit you back to defend themselves.
+### Radar.java 
+- This draws the radar.
+### UI.java 
+- This is the main file where all of the files get loaded from. This is also where I loaded 	in my background image and the csv file. This also sets the priority of the files and which file     overrides another.
+### UiLayout.java 
+- this file is only used to draw out the ui lines out to make the whole outline.
+### Main.java 
+- the file that is used to execute the program.
 
 # What I am most proud of in the assignment
 The overall asthetic look of the program. I put a few days of thought in what I wanted my finished program to look like and I believe it turned out well. The code that I used is not too complicated but my aim was to use this simple code into making something that works well and does not turn the UI into a game (main reason why I did not implement aliens health bar). 
@@ -37,39 +44,20 @@ I mean overall its not a very complicated program with many different features b
 
 # Markdown Tutorial
 
-This is a bulleted list
+### Shooting
 
-- Item
-- Item
-0
-This is a numbered list
+- Laser beam shows up once you shoot by left clicking anywhere.
+- The bullet count goes down until none left then it reloads.
+- If you shoot at the aliens they will hit back causing you to loose health.
+- As your health goes down the status changes at the top of the screen.
+- Health going down to 0 will result in System Failure (Death Screen).
+- If you hover over the alien without doing anything information is loaded from a CSV file and displayed on to the screen.
 
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
+This is a [hyperlink](https://github.com/gedithejedi/SciFiUI)
 
 This is code:
 
 ```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
 public void render()
 {
 	ui.noFill();
@@ -92,7 +80,7 @@ This is a youtube video:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-The loaded CSV file:
+### The loaded CSV file:
 
 | Name | Planet of origin | Superpower |
 |-----------|-----------|-----------|
