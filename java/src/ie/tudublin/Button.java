@@ -39,7 +39,7 @@ public class Button extends PApplet
         yl = 240;
         xl2 = 100;
         yl2 = 180;
-        health = 120;
+		health = 120;
     }
 
     public void render()

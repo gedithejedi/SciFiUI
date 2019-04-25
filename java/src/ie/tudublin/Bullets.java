@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
-import java.awt.Font;
 import java.awt.Graphics;
 
 public class Bullets
@@ -54,7 +53,6 @@ public class Bullets
 		
 		if(ui.mousePressed)
         {
-			//size(1025, 576);
             if(ui.mouseX > sx && ui.mouseX < sx + swidth && ui.mouseY > sy && ui.mouseY < sy + sheight)
             {
                 ui.ellipse(ui.mouseX, ui.mouseY, 10, 10);
