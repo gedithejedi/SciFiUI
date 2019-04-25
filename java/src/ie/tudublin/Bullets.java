@@ -65,7 +65,6 @@ public class Bullets
 				}
 				else
 				{
-					
 					try 
 					{
 						Thread.sleep(2000);

@@ -15,14 +15,26 @@ public class Button extends PApplet
     private float xl2;
     private float yl2;
 	private int health;
+	private String name1;
+	private String planet1;
+	private String superp1;
+	private String name2;
+	private String planet2;
+	private String superp2;
 
-    public Button(UI ui, float x, float y, float width, float height)
+    public Button(UI ui, float x, float y, float width, float height, String name1, String planet1, String superp1, String name2, String planet2, String superp2)
     {
         this.ui = ui;
         this.x = x;
         this.y = y;
         this.width = width;
-        this.height = height;
+		this.height = height;
+		this.name1 = name1;
+		this.planet1 = planet1;
+		this.superp1 = superp1; 
+		this.name2 = name2;
+		this.planet2 = planet2;
+		this.superp2 = superp2;
         xl = 340;
         yl = 240;
         xl2 = 100;
@@ -69,20 +81,20 @@ public class Button extends PApplet
 			
 			if(ui.mouseX > xl && ui.mouseX < xl + xl2 && ui.mouseY > yl && ui.mouseY < yl + yl2)
 			{
-                ui.fill(0,0,255);
+                ui.fill(79, 142, 236);
                 ui.textSize(20);
-                ui.text("Planet of origin: ", 455, 500); 
-                ui.text("Name: ", 495, 520);
-                ui.text("Superpower: ", 467, 540);
+                ui.text("Planet of origin: " + planet1, 500, 500); 
+                ui.text("Name: " + name1, 500, 520);
+                ui.text("Superpower: " + superp1, 500, 540);
 			}
-		
+			
 			if(ui.mouseX > x && ui.mouseX < x + width && ui.mouseY > y && ui.mouseY < y + height)
 			{
-                ui.fill(0,0,255);
+                ui.fill(79, 142, 236);
                 ui.textSize(20);
-                ui.text("Planet of origin: ", 455, 500); 
-                ui.text("Name: ", 495, 520); 
-                ui.text("Superpower: ", 467, 540);
+                ui.text("Planet of origin: " + planet2, 500, 500); 
+                ui.text("Name: " + name2, 500, 520); 
+                ui.text("Superpower: " + superp2, 500, 540);
 			}
 			
 			ui.textSize(20);
