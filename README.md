@@ -92,12 +92,11 @@ This is a youtube video:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-This is a table:
+The loaded CSV file:
 
-| Heading 1 | Heading 2 |
+| Name | Planet of origin | Superpower |
 |-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
+| Vortigaunt | Xen | Electrical |
+| Xenomorph | Unknown | Heatsensors |
+
 
