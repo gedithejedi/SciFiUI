@@ -74,11 +74,11 @@ This is an image of the background used for the project:
 
 This is an image of starting screen:
 
-![Image of main screen](java/image/ogscreen.png)
+![Image of main screen](java/image/ogscreen.PNG)
 
 This is an image of critical condition:
 
-![Image of main screen](java/image/critical.png)
+![Image of main screen](java/image/critical.PNG)
 
 This is a youtube video:
 
