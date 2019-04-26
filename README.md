@@ -82,7 +82,7 @@ This is an image of critical condition:
 
 This is an image of alien info being displayed:
 
-![Image of main screen](java/images/info.PNG)
+![Image of main screen](java/images/info.png)
 
 This is a youtube video:
 
