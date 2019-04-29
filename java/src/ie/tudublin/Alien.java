@@ -54,7 +54,7 @@ public class Alien
    {
        return name + "\t" + superp + "\t" + planet;
    } 
-
+   //Puttting in the CSV file collums into certain strings
    public Alien(TableRow row)
    {
     name = row.getString("Name");
