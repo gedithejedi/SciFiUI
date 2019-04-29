@@ -22,33 +22,17 @@ public class UI extends PApplet
     String planet2;
     String superp2;
 
-    boolean[] keys = new boolean[1024];
-
-    public void keyPressed()
-    {
-        keys[keyCode] = true;
-    }
-    
-    public void keyReleased()
-    {
-        keys[keyCode] = true;
-    }
-
-    public boolean checkKey(int c)
-    {
-        return keys[c] || keys [Character.toUpperCase(c)];
-    }
-
+    //Loads in the CSV file
     public void loadData()
 	{   
 		Table table = loadTable("data/aliens.csv", "header");
-        
+        //Puts alien 1 into separate array list
         for(TableRow row:table.rows())
         {
             Alien alien = new Alien(row);
             aliens.add(alien);
         }
-
+        //Puts alien 2 in a separate array list
         for(TableRow row:table.rows())
         {
             Alien alien1 = new Alien(row);
@@ -56,7 +40,7 @@ public class UI extends PApplet
         }
 
     }
-
+    //sets the array list to special strings using the gettters and setters from the alien.java file
     public void printAliens()
     {
         
@@ -97,25 +81,23 @@ public class UI extends PApplet
 
     public void draw()
     {
+        //displays the background image
         background(img);
-
+        //calls the ui layout render function
         ul.render();
-
+        //whenever mouse is clisked on screen this is called
         bul.shoot();
+        //renders the laser when mouse is licked
         bul.render();
-		
+		//radar function calls
 		r.updateline();
 		r.render();
 		r.resetline();
-
+        //renders the stuff for the button file
         b.render();
 
-        if (checkKey(LEFT))
-        {
-            System.out.println("Left arrow key pressed");
-        }
     }
-    
+    //Aray list where the csv file collums are stored
     public ArrayList<Alien> aliens = new ArrayList<Alien>();
 }
 
