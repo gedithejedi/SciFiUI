@@ -1,0 +1,8 @@
+            try {
+                java.applet.AudioClip clip =
+                java.applet.Applet.newAudioClip(
+                new java.net.URL("sound/pew.wav"));
+                clip.play();
+                } catch (java.net.MalformedURLException murle) {
+                System.out.println(murle);
+                }

@@ -51,8 +51,8 @@ public class UI extends PApplet
 
         for(TableRow row:table.rows())
         {
-            Alien alien2 = new Alien(row);
-            aliens.add(alien2);
+            Alien alien1 = new Alien(row);
+            aliens.add(alien1);
         }
 
     }

@@ -16,7 +16,7 @@ public class Bullets
     private float sy;
     private float swidth;
     private float sheight;
-	
+
     public Bullets(UI ui)
     {
         this.ui = ui;
@@ -53,6 +53,8 @@ public class Bullets
 		
 		if(ui.mousePressed)
         {
+
+           
             if(ui.mouseX > sx && ui.mouseX < sx + swidth && ui.mouseY > sy && ui.mouseY < sy + sheight)
             {
                 ui.ellipse(ui.mouseX, ui.mouseY, 10, 10);
@@ -63,14 +65,7 @@ public class Bullets
 				}
 				else
 				{
-					try 
-					{
-						Thread.sleep(2000);
-					} 
-					catch(InterruptedException e)
-					{
-					
-					}
+					ui.delay(500);
 					Bullets = 150;
 				}
             }
