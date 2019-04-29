@@ -42,8 +42,6 @@ Astheticly I was planing to colour in the ui blue to make it look more cool but 
 
 I mean overall its not a very complicated program with many different features but its nice and cool looking which is exacly what I was aiming to do a cool ui that would not keep me bored programming.
 
-# Markdown Tutorial
-
 ### Shooting
 
 - Laser beam shows up once you shoot by left clicking anywhere.
