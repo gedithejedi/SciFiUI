@@ -84,7 +84,7 @@ This is an image of alien info being displayed:
 
 This is a youtube video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube]](https://www.youtube.com/watch?v=2G33N81Tl5k&feature=youtu.be)
 
 ### The loaded CSV file:
 
