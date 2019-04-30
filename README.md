@@ -1,7 +1,9 @@
 # SciFi UI Project
 
 Name: Gediminas Petreikis
+
 Student Number: C17323756
+
 This is a youtube video:
 
 [Click Me](https://www.youtube.com/watch?v=2G33N81Tl5k&feature=youtu.be)
