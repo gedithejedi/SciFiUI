@@ -1,8 +1,10 @@
 # SciFi UI Project
 
 Name: Gediminas Petreikis
-
 Student Number: C17323756
+This is a youtube video:
+
+[Click Me](https://www.youtube.com/watch?v=2G33N81Tl5k&feature=youtu.be)
 
 # Description of the assignment
 I have made a POV UI of a futuristic robot that has landed on mars and has encountered aliens. This robot has a radar, warning system, alien analysis, capability to shoot, reload and loose health. This is somewhat based of the masterchief ui from Halo with my own twist to it.
@@ -53,19 +55,6 @@ I mean overall its not a very complicated program with many different features b
 
 This is a [hyperlink](https://github.com/gedithejedi/SciFiUI)
 
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
 This is an image of the background used for the project:
 
 ![An image of the background](java/images/mars2.png)
@@ -81,10 +70,6 @@ This is an image of critical condition:
 This is an image of alien info being displayed:
 
 ![Image of main screen](java/images/info.png)
-
-This is a youtube video:
-
-[Click Me](https://www.youtube.com/watch?v=2G33N81Tl5k&feature=youtu.be)
 
 ### The loaded CSV file:
 
