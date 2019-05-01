@@ -5,8 +5,7 @@ Name: Gediminas Petreikis
 Student Number: C17323756
 
 This is a youtube video:
-
-[Click Me](https://www.youtube.com/watch?v=2G33N81Tl5k&feature=youtu.be)
+[![YouTube](java/images/ogscreen.PNG)](https://www.youtube.com/watch?v=2G33N81Tl5k&feature=youtu.be)
 
 # Description of the assignment
 I have made a POV UI of a futuristic robot that has landed on mars and has encountered aliens. This robot has a radar, warning system, alien analysis, capability to shoot, reload and loose health. This is somewhat based of the masterchief ui from Halo with my own twist to it.
@@ -38,7 +37,7 @@ There are 7 classes in the java program.
 - the file that is used to execute the program.
 
 # What I am most proud of in the assignment
-The overall asthetic look of the program. I put a few days of thought in what I wanted my finished program to look like and I believe it turned out well. The code that I used is not too complicated but my aim was to use this simple code into making something that works well and does not turn the UI into a game (main reason why I did not implement aliens health bar). 
+The overall asthetic look of the program. I put in a good few days of thought in what I wanted my finished program to look like and I believe it turned out well. The code that I used is not too complicated but my aim was to use this simple code into making something that works well and does not turn the UI into a game (main reason why I did not implement aliens health bar). 
 
 I wanted this to be a easy to use and get grasp of alien UI with everything having its own place on the screen and not interfering with other things.
 
@@ -60,10 +59,6 @@ This is a [hyperlink](https://github.com/gedithejedi/SciFiUI)
 This is an image of the background used for the project:
 
 ![An image of the background](java/images/mars2.png)
-
-This is an image of starting screen:
-
-![Image of main screen](java/images/ogscreen.PNG)
 
 This is an image of critical condition:
 
